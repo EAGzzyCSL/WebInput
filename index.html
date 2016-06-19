@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebInput</title>
+    <meta charset='utf-8' />
+    <link type="text/css" href="index.css" rel="stylesheet">
+    <script type="text/javascript" src="cookie.js"></script>
+    <style type='text/css'>
+
+    </style>
+</head>
+
+<body>
+    <div id="div_body">
+        <div id="div_title">WebInput</div>
+        <div id="div_content">
+            <div id="div_other">
+                <div id="div_block_app" class="show">
+                    <span class="span_blockTitle">扫描二维码获取下载链接</span>
+                    <img id="img_qr" src="img/qr.png" />
+                    <a id="a_download" href="http://pan.baidu.com/s/1nu7OFk1" target="_blank">下载到电脑</a>
+                </div>
+                <div id="div_block_info">
+                    <span class="span_blockTitle">关于WebInput</span>
+                    <ul>
+                        <li>WebInput是什么
+                            <ul>
+                                WebInput是一款利用浏览器WebSocket协议的输入法，可以利用笔记本或pc机的键盘在android手机上进行输入操作，提高输入效率。
+                            </ul>
+                        </li>
+                        <li>
+                            注意事项
+                            <ul>
+
+                                使用WebInput需要pc端浏览器支持WebSocket协议，同时需要保证pc和android设备连接在同一局域网下或他们都获得了一个公网ip地址（注意，这样将面临极其严重的隐私威胁）。更多关于隐私的说明请见下文。
+
+                            </ul>
+                        </li>
+                        <li>
+                            关于bug
+                            <ul>
+                                WebInput还属于demo阶段，存在很多的bug。
+                            </ul>
+                        </li>
+                        <li>
+                            联系开发者
+                            <ul>
+                                GitHub：EAGzzyCSL
+                            </ul>
+                        </li>
+                        <li>
+                            隐私权
+                            <ul>
+                                这是一款开源的app，所以你可以相信我没有主观侵犯你隐私的想法，但由于app现在还出于demo阶段，并未启用wss协议，所以你需要承担一些使用它的些隐私风险，如果你对当前局域网内连接的所有设备都信任，那么你比较安全的使用WebInput，如果你对当前局域网下的设备无法信任，那么不建议使用WebInput或使用WebInput来输入敏感信息。
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div id="div_block_help">
+                    <span class="span_blockTitle">使用方法</span>
+                    <ul>
+                        <li>
+                            获取android端app
+                            <ul>
+                                扫描网页上的二维码获取app下载链接，下载app后安装。
+                            </ul>
+                        </li>
+                        <li>
+                            启用并选择WebInput
+                            <ul>
+                                启动WebInput app，按照提示启用并选择WebInput作为输入法。
+                            </ul>
+                        </li>
+                        <li>
+                            连接WebInput
+                            <ul>
+                                在android端任意输入区域点击使输入法面板弹出，在页面下方的输入框输入输入法面板显示的ip和端口，并点击连接按钮。
+                            </ul>
+                        </li>
+                        <li>
+                            开始使用WebInput
+                            <ul>
+                                浏览器提示连接成功后，即可使用WebInput，将需要输入的内容输入到右边的文本框中并点击发送按钮即可发送到手机。
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="div_block_setting">
+                    in developing
+                </div>
+            </div>
+            <div id="div_inputPart">
+                <div id="div_inputPanel">
+                    <div id="div_editLayout">
+                        <textarea id="textarea_input" rows="1"></textarea>
+                        <span id="span_placeholder">在此处输入点击发送即可输入到android</span>
+                    </div>
+                    <div class="imgBkg" id="div_send"></div>
+                </div>
+            </div>
+        </div>
+        <div id="div_bottom">
+            <div id="div_action"></div>
+            <div id="div_connect" class="imgBkg">
+                <input id="input_address" placeholder="ip:port" />
+                <div id="div_go" class="imgBkg"></div>
+            </div>
+            <div id="div_tipBox">
+                <div id="div_tip">
+                    <span id="span_tip">提示</span>
+                    <div id="div_tipClose" class="imgBkg"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- not visible normal -->
+    <div id="div_mask">
+        <div id="div_actionBlock">
+            <div id="div_aciontAbout" class="imgBkg" myBindBlock="div_block_info"></div>
+            <div id="div_actionHelp" class="imgBkg" myBindBlock="div_block_help"></div>
+            <div id="div_actionSetting" class="imgBkg" myBindBlock="div_block_setting"></div>
+            <div id="div_actionApp" class="imgBkg" myBindBlock="div_block_app"></div>
+            <a id="a_acionGithub" class="imgBkg" href="https://github.com/EAGzzyCSL/WebInput" target="_blank" /></a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

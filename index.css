@@ -1,0 +1,218 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.imgBkg {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 60%;
+}
+body {}
+#div_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0 1em;
+}
+
+/*title*/
+
+#div_title {
+    color: #00BCD4;
+    font-size: 6em;
+    flex: 0 0 0;
+}
+
+/*content*/
+
+#div_content {
+    flex: 1 0 0;
+    display: flex;
+}
+#div_other {
+    flex: 1 0 0;
+    overflow: hidden;
+}
+#div_other>* {
+    display: none;
+    margin: 0 5em;
+}
+#div_other>*.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.span_blockTitle {
+    color: #607D8B;
+    font-size: 1.5em;
+}
+#img_qr {
+    margin: 2em;
+}
+#a_download {
+    color: #607D8B;
+}
+
+/*inputPart*/
+
+#div_inputPart {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#div_inputPanel {
+    display: flex;
+    margin: 0 10em;
+}
+#div_editLayout {
+    position: relative;
+    height: 6em;
+    bottom: 0;
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+}
+#span_placeholder {
+    display: block;
+    position: relative;
+    font-size: 1.5em;
+    bottom: -0.6em;
+    left: 0.2em;
+    color: #00BCD4;
+    transition: all ease 0.2s;
+}
+#span_placeholder.up {
+    font-size: 2em;
+    bottom: 1em;
+    left: 0;
+}
+#textarea_input {
+    font-size: 2em;
+    border: none;
+    border-bottom: 2px solid #00BCD4;
+    background-color: transparent;
+    display: block;
+    resize: none;
+    outline: none;
+    position: relative;
+    top: 2em;
+    z-index: 2;
+}
+#div_send {
+    margin-top: 3em;
+    height: 3em;
+    width: 3em;
+    background-image: url(img/icon/ic_send_black_48px.svg);
+}
+
+/*bottom*/
+
+#div_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 4em;
+    justify-content: space-between;
+}
+#div_action {
+    background-image: url(img/icon/ic_widgets_white_48px.svg);
+    height: 3em;
+    width: 3em;
+}
+#div_actionBlock {
+    height: 8em;
+    width: 12em;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    left: 4em;
+    bottom: 1em;
+    display: flex;
+    z-index: 2;
+    box-shadow: 1px 1px 5px #aaa;
+}
+#div_actionBlock>* {
+    height: 4em;
+    width: 4em;
+    display: block;
+}
+#a_acionGithub {
+    background-image: url(img/icon/GitHub-Mark-120px-plus.png);
+}
+#div_actionSetting {
+    background-image: url(img/icon/ic_settings_black_48px.svg);
+}
+#div_actionHelp {
+    background-image: url(img/icon/ic_help_outline_black_48px.svg);
+}
+#div_actionApp {
+    background-image: url(img/icon/ic_android_black_48px.svg);
+}
+#div_aciontAbout {
+    background-image: url(img/icon/ic_info_outline_black_48px.svg);
+}
+
+/*ip*/
+
+#div_connect {
+    display: flex;
+}
+#input_address {
+    color: #00BCD4;
+    border: none;
+    border-bottom: 2px solid #00BCD4;
+    font-size: 1.5em;
+    outline: none;
+    background: transparent;
+}
+#div_go {
+    height: 3em;
+    width: 3em;
+    background-image: url(img/icon/ic_call_made_black_48px.svg);
+}
+
+/*tip*/
+
+#div_tipBox {
+    height: 3em;
+    overflow: hidden;
+    flex: 0 0 20em;
+}
+#div_tip {
+    background-color: black;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 3em;
+    transition: top ease-in-out 0.2s;
+}
+#div_tip.show {
+    top: 0;
+}
+#span_tip {
+    color: white;
+    margin-left: 0.5em;
+}
+#div_tipClose {
+    background-image: url(img/icon/ic_close_white_48px.svg);
+    height: 3em;
+    width: 3em;
+}
+#div_mask {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+#div_mask.show {
+    display: block;
+}
